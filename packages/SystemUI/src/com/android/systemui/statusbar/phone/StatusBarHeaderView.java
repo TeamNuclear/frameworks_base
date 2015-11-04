@@ -337,7 +337,7 @@ public class StatusBarHeaderView extends RelativeLayout implements View.OnClickL
         mBatteryLevel.setVisibility(mExpanded ? View.VISIBLE : View.GONE);
         mSettingsContainer.findViewById(R.id.tuner_icon).setVisibility(
                 TunerService.isTunerEnabled(mContext) ? View.INVISIBLE : View.INVISIBLE);
-        //TunerService.setTunerEnabled(mContext, true);
+        TunerService.setTunerEnabled(mContext, true);
     }
 
     private void updateSignalClusterDetachment() {
